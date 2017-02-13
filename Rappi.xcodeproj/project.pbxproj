@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		243204461E4FFD350066740D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243204451E4FFD350066740D /* AppDelegate.swift */; };
-		243204481E4FFD350066740D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243204471E4FFD350066740D /* ViewController.swift */; };
-		2432044B1E4FFD350066740D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243204491E4FFD350066740D /* Main.storyboard */; };
 		2432044E1E4FFD350066740D /* Rappi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2432044C1E4FFD350066740D /* Rappi.xcdatamodeld */; };
 		243204501E4FFD350066740D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2432044F1E4FFD350066740D /* Assets.xcassets */; };
 		243204531E4FFD350066740D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243204511E4FFD350066740D /* LaunchScreen.storyboard */; };
+		2432045C1E5201CF0066740D /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432045B1E5201CF0066740D /* AppsController.swift */; };
+		2432045E1E52039B0066740D /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432045D1E52039B0066740D /* CategoriesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		243204421E4FFD350066740D /* Rappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243204451E4FFD350066740D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		243204471E4FFD350066740D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2432044A1E4FFD350066740D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2432044D1E4FFD350066740D /* Rappi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rappi.xcdatamodel; sourceTree = "<group>"; };
 		2432044F1E4FFD350066740D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		243204521E4FFD350066740D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		243204541E4FFD350066740D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2432045B1E5201CF0066740D /* AppsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppsController.swift; path = Controllers/AppsController.swift; sourceTree = "<group>"; };
+		2432045D1E52039B0066740D /* CategoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesController.swift; path = Controllers/CategoriesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		243204441E4FFD350066740D /* Rappi */ = {
 			isa = PBXGroup;
 			children = (
+				2432045A1E5201AB0066740D /* Controllers */,
 				243204451E4FFD350066740D /* AppDelegate.swift */,
-				243204471E4FFD350066740D /* ViewController.swift */,
-				243204491E4FFD350066740D /* Main.storyboard */,
 				2432044F1E4FFD350066740D /* Assets.xcassets */,
 				243204511E4FFD350066740D /* LaunchScreen.storyboard */,
 				243204541E4FFD350066740D /* Info.plist */,
 				2432044C1E4FFD350066740D /* Rappi.xcdatamodeld */,
 			);
 			path = Rappi;
+			sourceTree = "<group>";
+		};
+		2432045A1E5201AB0066740D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2432045B1E5201CF0066740D /* AppsController.swift */,
+				2432045D1E52039B0066740D /* CategoriesController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +137,6 @@
 			files = (
 				243204531E4FFD350066740D /* LaunchScreen.storyboard in Resources */,
 				243204501E4FFD350066740D /* Assets.xcassets in Resources */,
-				2432044B1E4FFD350066740D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +147,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243204481E4FFD350066740D /* ViewController.swift in Sources */,
 				2432044E1E4FFD350066740D /* Rappi.xcdatamodeld in Sources */,
 				243204461E4FFD350066740D /* AppDelegate.swift in Sources */,
+				2432045C1E5201CF0066740D /* AppsController.swift in Sources */,
+				2432045E1E52039B0066740D /* CategoriesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		243204491E4FFD350066740D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2432044A1E4FFD350066740D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		243204511E4FFD350066740D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
