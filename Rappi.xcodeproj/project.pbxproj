@@ -13,6 +13,10 @@
 		243204531E4FFD350066740D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243204511E4FFD350066740D /* LaunchScreen.storyboard */; };
 		2432045C1E5201CF0066740D /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432045B1E5201CF0066740D /* AppsController.swift */; };
 		2432045E1E52039B0066740D /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432045D1E52039B0066740D /* CategoriesController.swift */; };
+		24C1D6171E5280E300F5338C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1D6161E5280E300F5338C /* ApiService.swift */; };
+		24C1D61C1E52812E00F5338C /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1D6191E52812E00F5338C /* AppCell.swift */; };
+		24C1D61D1E52812E00F5338C /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1D61A1E52812E00F5338C /* BaseCell.swift */; };
+		24C1D61E1E52812E00F5338C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1D61B1E52812E00F5338C /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		243204541E4FFD350066740D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2432045B1E5201CF0066740D /* AppsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppsController.swift; path = Controllers/AppsController.swift; sourceTree = "<group>"; };
 		2432045D1E52039B0066740D /* CategoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesController.swift; path = Controllers/CategoriesController.swift; sourceTree = "<group>"; };
+		24C1D6161E5280E300F5338C /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		24C1D6191E52812E00F5338C /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		24C1D61A1E52812E00F5338C /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		24C1D61B1E52812E00F5338C /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,14 @@
 		243204441E4FFD350066740D /* Rappi */ = {
 			isa = PBXGroup;
 			children = (
-				2432045A1E5201AB0066740D /* Controllers */,
+				24C1D6151E5280E300F5338C /* ApiService */,
 				243204451E4FFD350066740D /* AppDelegate.swift */,
 				2432044F1E4FFD350066740D /* Assets.xcassets */,
-				243204511E4FFD350066740D /* LaunchScreen.storyboard */,
+				2432045A1E5201AB0066740D /* Controllers */,
 				243204541E4FFD350066740D /* Info.plist */,
+				243204511E4FFD350066740D /* LaunchScreen.storyboard */,
 				2432044C1E4FFD350066740D /* Rappi.xcdatamodeld */,
+				24C1D6181E52812E00F5338C /* Views */,
 			);
 			path = Rappi;
 			sourceTree = "<group>";
@@ -73,6 +83,24 @@
 				2432045D1E52039B0066740D /* CategoriesController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		24C1D6151E5280E300F5338C /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				24C1D6161E5280E300F5338C /* ApiService.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		24C1D6181E52812E00F5338C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24C1D6191E52812E00F5338C /* AppCell.swift */,
+				24C1D61A1E52812E00F5338C /* BaseCell.swift */,
+				24C1D61B1E52812E00F5338C /* CategoryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2432044E1E4FFD350066740D /* Rappi.xcdatamodeld in Sources */,
+				24C1D6171E5280E300F5338C /* ApiService.swift in Sources */,
 				243204461E4FFD350066740D /* AppDelegate.swift in Sources */,
+				24C1D61E1E52812E00F5338C /* CategoryCell.swift in Sources */,
+				24C1D61C1E52812E00F5338C /* AppCell.swift in Sources */,
+				24C1D61D1E52812E00F5338C /* BaseCell.swift in Sources */,
 				2432045C1E5201CF0066740D /* AppsController.swift in Sources */,
 				2432045E1E52039B0066740D /* CategoriesController.swift in Sources */,
 			);
@@ -306,6 +338,7 @@
 				243204591E4FFD350066740D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

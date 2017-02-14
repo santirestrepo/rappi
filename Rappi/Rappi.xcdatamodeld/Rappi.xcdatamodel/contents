@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="App" representedClassName="App" syncable="YES" codeGenerationType="class">
+        <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bundleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="app" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="term" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="app" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="App" inverseName="category" inverseEntity="App" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="App" positionX="-54" positionY="18" width="128" height="225"/>
+    </elements>
 </model>
